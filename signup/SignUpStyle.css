@@ -11,11 +11,13 @@
 
 body {
 
-    background-image: url(./assets/background.jpg);
+    background: rgb(48, 51, 58);
+    background: linear-gradient(166deg, rgba(48, 51, 58, 1) 0%, rgba(114, 103, 111, 1) 0%, rgba(154, 141, 150, 1) 15%, rgba(176, 166, 167, 1) 58%, rgba(183, 157, 155, 1) 100%, rgba(81, 64, 61, 1) 100%);
     background-repeat: repeat;
     background-size: cover;
     font-family: 'Sacramento', fallback;
     font-style: italic;
+    color: #10333A;
 }
 
 #heading {
@@ -47,7 +49,7 @@ body {
 }
 
 #gender {
-    width:6em;
+    width: 6em;
 }
 
 #dob {
@@ -69,10 +71,10 @@ body {
 #box {
     width: 25em;
     height: 38em;
-    background-color: rgb(255, 255, 255);
+    background-color:#B79D9B;
     border-radius: 2em;
     box-shadow: 18px 30px 50px rgb(43, 43, 43);
-    background: rgba(247, 248, 185, 0.342);
+    background: #B79D9B;
 }
 
 @font-face {
@@ -80,8 +82,8 @@ body {
     src: url('./font/Sacramento-Regular.ttf') format('truetype');
 }
 
-#sitename{
-    font-size:11.6em;
+#sitename {
+    font-size: 11.6em;
     text-transform: lowercase;
     line-height: 0.1px;
     margin-bottom: 65px;
@@ -93,30 +95,34 @@ body {
     line-height: 0px;
     margin-left: 0.2em;
 }
-#brandname{
+
+#brandname {
     margin-top: 10em;
     text-shadow: 2px 8px 8px rgb(43, 43, 43);
 }
+
 .container {
     display: flex;
     width: 1;
 }
 
-#inputalignment{
+#inputalignment {
     margin-left: 1.2em;
 }
 
-::placeholder{
+::placeholder {
     color: wheat;
 }
 
-.inputs:hover::placeholder{
+.inputs:hover::placeholder {
     color: gray;
 }
-#gender:hover{
+
+#gender:hover {
     color: gray;
 }
-#terms{
+
+#terms {
     display: flex;
     align-items: center;
     margin-top: -13px;
@@ -124,26 +130,27 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin-left: 5em;
 }
-#log{
+
+#log {
     font-size: 1em;
     padding-right: 0.5em;
     font-style: normal;
 }
 
-#submit:hover{
-    color:gray;
+#submit:hover {
+    color: gray;
 }
 
-#cancel:hover{
-    color:gray;
+#cancel:hover {
+    color: gray;
 }
 
-#checkbox{
+#checkbox {
     font-size: 1em;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
 }
 
-#tickbox{
+#tickbox {
     margin-left: 1em;
 }
