@@ -1,0 +1,22 @@
+body {
+
+    background-image: url(./assets/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Sacramento', fallback;
+    font-style: normal;
+}
+
+h1{
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    font-weight:bolder;
+}
+h2{
+    color: red;
+    text-decoration: underline;
+}
+p{
+    text-align:justify;
+}

@@ -1,0 +1,149 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 50em) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+body {
+
+    background-image: url(./assets/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Sacramento', fallback;
+    font-style: italic;
+}
+
+#heading {
+    text-transform: capitalize;
+    font-size: 2.5em;
+    margin-left: 1.5em;
+    margin-bottom: 0.1em;
+    padding-top: 0.3em;
+    text-shadow: 2px 8px 8px rgb(43, 43, 43)
+}
+
+#form {
+
+    margin-left: 13em;
+}
+
+.inputs {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 2em;
+    margin: 0.2em;
+    width: 20em;
+    border-width: 0em;
+    background-color: rgb(0, 0, 0);
+}
+
+#gender {
+    width:6em;
+}
+
+#dob {
+    width: 7em;
+}
+
+#age {
+    width: 3.7em;
+}
+
+#cancel {
+    width: 10.6em;
+}
+
+#submit {
+    width: 10.5em;
+}
+
+#box {
+    width: 25em;
+    height: 38em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2em;
+    box-shadow: 18px 30px 50px rgb(43, 43, 43);
+    background: rgba(247, 248, 185, 0.342);
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('./font/Sacramento-Regular.ttf') format('truetype');
+}
+
+#sitename{
+    font-size:11.6em;
+    text-transform: lowercase;
+    line-height: 0.1px;
+    margin-bottom: 65px;
+}
+
+#slogan {
+    font-size: 3em;
+    text-transform: lowercase;
+    line-height: 0px;
+    margin-left: 0.2em;
+}
+#brandname{
+    margin-top: 10em;
+    text-shadow: 2px 8px 8px rgb(43, 43, 43);
+}
+.container {
+    display: flex;
+    width: 1;
+}
+
+#inputalignment{
+    margin-left: 1.2em;
+}
+
+::placeholder{
+    color: wheat;
+}
+
+.inputs:hover::placeholder{
+    color: gray;
+}
+#gender:hover{
+    color: gray;
+}
+#terms{
+    display: flex;
+    align-items: center;
+    margin-top: -13px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5em;
+}
+#log{
+    font-size: 1em;
+    padding-right: 0.5em;
+    font-style: normal;
+}
+
+#submit:hover{
+    color:gray;
+}
+
+#cancel:hover{
+    color:gray;
+}
+
+#checkbox{
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+#tickbox{
+    margin-left: 1em;
+}

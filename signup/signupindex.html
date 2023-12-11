@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignUpStyle.css">
+    <script src="./SignUpjs.js"></script>
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="brandname">
+            <p id="sitename">HOTEL HEAVEN</p>
+            <p id="slogan">Taste a Slice of Paradise.</p>
+        </div>
+        <form id=form action="">
+            <div id="box">
+                <div id="inputalignment">
+                    <h1 id=heading>create Account </h1>
+                    <input type="text" name="fName" id="fName" class="inputs" placeholder="First name" required
+                        autocomplete="name"><br>
+                    <input type="text" name="sName" id="sName" class="inputs" placeholder="Second name" required
+                        autocomplete="name"><br>
+                    <select name="gender" id="gender" class="inputs" required autocomplete="sex">
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                    </select>
+                    <input type="text" name="dob" id="dob" class="inputs" placeholder="dd-mm-yyyy" required
+                        autocomplete="const {propertyName} = objectToDestruct;">
+                    <input type="email" name="emailId" id="emailId" class="inputs" placeholder="Email id" required
+                        autocomplete="email"><br>
+                    <input type="tel" id="phone" class="inputs" name="phone" placeholder="Phone number" required
+                        autocomplete="tel"><br>
+                    <input type="password" name="password" id="password" class="inputs" placeholder="Password" required
+                        autocomplete="new-password"><br>
+                    <input type="password" name="Cpassword" id="Cpassword" class="inputs" placeholder="Confrim Password"
+                        required autocomplete="new-password"><br>
+                    <div id="tickbox">
+                        <input type="checkbox" id="checkbox" required>
+                        <label for="checkbox" id="checkbox">i agree all terms and conditions</label>
+                        <a href="http://127.0.0.1:5500/signup/terms&condition.html" id="checkbox">Terms&Condition</a>
+                    </div>
+                    <button onclick="inputvalidation()" name="submit" id="submit" class="inputs">Submit</button>
+                    <button name="cancel" id="cancel" class="inputs">Cancel</button><br>
+                    <div id="terms">
+                        <p id="log">Don't have an account?</p>
+                        <a href="http://127.0.0.1:5500/login/loginindex.html" id="log">Login</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
