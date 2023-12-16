@@ -1,156 +1,549 @@
-.container {
-    display: flex;
-    flex-direction: column;
+/*for phone screen*/
+@media screen and (max-width:766px) {
+
+    body {
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Sacramento', fallback;
+        font-style: italic;
+        color: #ffffff;
+    }
+
+    #form {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-image {
+        /* The image used */
+        background-image: url("./assets/background.jpeg");
+
+        /* Add the blur effect */
+        filter: blur(30px);
+
+        /* Full height */
+        height: 110%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* Position the background image at the top of the page */
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        width: 110%;
+        z-index: -1;
+    }
+
+    #heading {
+        text-transform: capitalize;
+        font-size: 2.5em;
+        padding-left: 1.5em;
+        margin-bottom: 0.1em;
+        padding-top: 0.3em;
+        color: #ffd900
+    }
+
+    .inputs {
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 1em;
+        border-radius: 2em;
+        margin: 0.2em;
+        width: 20em;
+        border-width: 0px;
+        background-color: rgb(255, 255, 255);
+        background: #ffffff6b;
+    }
+
+    #gender {
+        text-align: center;
+        width: 10.6em;
+    }
+
+    #dob {
+       text-align: center;
+        width: 8.6em;
+    }
+
+    #age {
+        width: 3.7em;
+    }
+
+    #cancel {
+        width: 10.6em;
+    }
+
+    #submit {
+        width: 10.5em;
+    }
+
+    #box {
+        width: 25em;
+        height: 38em;
+        border-radius: 2em;
+        box-shadow: 18px 30px 50px rgb(0, 0, 0);
+        background: #5e5e5e;
+        opacity: 45%;
+        margin-top: -640px;
+    }
+
+    @font-face {
+        font-family: 'Sacramento';
+        src: url('./font/Sacramento-Regular.ttf') format('truetype');
+    }
+
+    #sitename {
+        font-size: 5em;
+        text-transform: lowercase;
+        line-height: 0px;
+        font-weight: lighter;
+    }
+
+    #slogan {
+        font-size: 2em;
+        text-transform: lowercase;
+        line-height: 4px;
+        margin-top: -20px;
+        margin-left: 0.2em;
+        font-weight: lighter;
+    }
+
+    .brandname {
+        color: #FFD700;
+    }
+
+    .container {
+        flex-direction: column;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ::placeholder {
+        color: rgb(255, 255, 255);
+    }
+
+    .inputs:hover {
+        cursor: pointer;
+    }
+
+    .inputs:hover::placeholder {
+        color: rgb(94, 94, 94);
+    }
+
+    #gender:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #terms {
+        display: flex;
+        align-items: center;
+        margin-top: -13px;
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 5em;
+    }
+
+    #log {
+        font-size: 1em;
+        padding-right: 0.5em;
+        font-style: normal;
+    }
+    #condition{
+        font-style: normal;
+        color: #ffd900;
+        text-decoration: none;
+    }
+    #submit:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #cancel:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #checkbox {
+        font-size: 1em;
+        font-family:'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+    #Terms_Condition{
+        font-family:'Times New Roman', Times, serif;
+        font-style: normal;
+        color: #ffd900;
+        text-decoration: none;
+    }
+
+    #tickbox {
+        margin-left: 1em;
+    }
+
+
 }
 
-@media screen and (min-width: 50em) {
+/*for tab screen*/
+@media screen and (min-width:767px) {
+    body {
+        font-family: 'Sacramento', fallback;
+        font-style: italic;
+        color: #ffffff;
+    }
+    #condition{
+        font-style: normal;
+        color: #ffd900;
+        text-decoration: none;
+    }
+    #condition:hover{
+        color:#ffffff6b ;
+    }
+    #Terms_Condition{
+        font-family:'Times New Roman', Times, serif;
+        font-style: normal;
+        color: #ffd900;
+        text-decoration: none;
+    }
+    #Terms_Condition:hover{
+        color:#ffffff6b ;
+    }
+    .bg-image {
+        /* The image used */
+        background-image: url("./assets/background.jpeg");
+
+        /* Add the blur effect */
+        filter: blur(30px);
+
+        /* Full height */
+        height: 110%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* Position the background image at the top of the page */
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        width: 110%;
+        z-index: -1;
+    }
+
+    #heading {
+        text-transform: capitalize;
+        font-size: 2.5em;
+        padding-left: 1.5em;
+        margin-bottom: 0.1em;
+        padding-top: 0.3em;
+        color: #ffd900
+    }
+
+    #form {
+        padding-left: 2em;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputs {
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 1em;
+        border-radius: 2em;
+        margin: 0.2em;
+        width: 20em;
+        border-width: 0px;
+        background-color: rgb(255, 255, 255);
+        background: #ffffff6b;
+    }
+
+    #gender {
+        width: 10.6em;
+    }
+
+    #dob {
+        width: 8.6em;
+    }
+
+    #age {
+        width: 3.7em;
+    }
+
+    #cancel {
+        width: 10.6em;
+    }
+
+    #submit {
+        width: 10.5em;
+    }
+
+    @font-face {
+        font-family: 'Sacramento';
+        src: url('./font/Sacramento-Regular.ttf') format('truetype');
+    }
+
+    #sitename {
+        font-size: 10em;
+        text-transform: lowercase;
+        line-height: 0px;
+        font-weight: lighter;
+    }
+
+    #slogan {
+        font-size: 2em;
+        text-transform: lowercase;
+        line-height: 0px;
+        margin-top: -50px;
+        margin-left: 0.2em;
+        font-weight: lighter;
+    }
+
+    .brandname {
+        color: #FFD700;
+    }
+
     .container {
         flex-direction: row;
+
     }
+
+    ::placeholder {
+        color: rgb(255, 255, 255);
+    }
+
+    .inputs:hover {
+        cursor: pointer;
+    }
+
+    .inputs:hover::placeholder {
+        color: rgb(94, 94, 94);
+    }
+
+    #gender:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #terms {
+        display: flex;
+        align-items: center;
+        margin-top: -13px;
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 5em;
+    }
+
+    #log {
+        font-size: 1em;
+        padding-right: 0.5em;
+        font-style: normal;
+    }
+
+    #submit:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #cancel:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #checkbox {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+
+    #tickbox {
+        margin-left: 1em;
+    }
+
 }
 
-body {
+/*for desktop screen*/
+@media screen and (min-width:997px) {
+    body {
+        font-family: 'Sacramento', fallback;
+        font-style: italic;
+        color: #ffffff;
+    }
+    #condition{
+        font-style: normal;
+        color: #ffd900;
+        text-decoration: none;
+    }
+    #Terms_Condition{
+        font-family:'Times New Roman', Times, serif;
+        font-style: normal;
+        color: #ffd900;
+        text-decoration: none;
+    }
 
-    background: rgb(48, 51, 58);
-    background: linear-gradient(166deg, rgba(48, 51, 58, 1) 0%, rgba(114, 103, 111, 1) 0%, rgba(154, 141, 150, 1) 15%, rgba(176, 166, 167, 1) 58%, rgba(183, 157, 155, 1) 100%, rgba(81, 64, 61, 1) 100%);
-    background-repeat: repeat;
-    background-size: cover;
-    font-family: 'Sacramento', fallback;
-    font-style: italic;
-    color: #10333A;
-}
+    .bg-image {
+        /* The image used */
+        background-image: url("./assets/background.jpeg");
 
-#heading {
-    text-transform: capitalize;
-    font-size: 2.5em;
-    margin-left: 1.5em;
-    margin-bottom: 0.1em;
-    padding-top: 0.3em;
-    text-shadow: 2px 8px 8px rgb(43, 43, 43)
-}
+        /* Add the blur effect */
+        filter: blur(30px);
 
-#form {
+        /* Full height */
+        height: 110%;
 
-    margin-left: 13em;
-}
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-.inputs {
+        /* Position the background image at the top of the page */
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        width: 110%;
+        z-index: -1;
+    }
 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    padding: 1em;
-    border-radius: 2em;
-    margin: 0.2em;
-    width: 20em;
-    border-width: 0em;
-    background-color: rgb(0, 0, 0);
-}
+    #heading {
+        text-transform: capitalize;
+        font-size: 2.5em;
+        padding-left: 1.5em;
+        margin-bottom: 0.1em;
+        padding-top: 0.3em;
+        color: #ffd900
+    }
 
-#gender {
-    width: 6em;
-}
+    #form {
+        padding-left:10em;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
 
-#dob {
-    width: 7em;
-}
+    .inputs {
 
-#age {
-    width: 3.7em;
-}
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 1em;
+        border-radius: 2em;
+        margin: 0.2em;
+        width: 20em;
+        border-width: 0px;
+        background-color: rgb(255, 255, 255);
+        background: #ffffff6b;
+    }
 
-#cancel {
-    width: 10.6em;
-}
+    #gender {
+        width: 10.6em;
+    }
 
-#submit {
-    width: 10.5em;
-}
+    #dob {
+        width: 8.6em;
+    }
 
-#box {
-    width: 25em;
-    height: 38em;
-    background-color:#B79D9B;
-    border-radius: 2em;
-    box-shadow: 18px 30px 50px rgb(43, 43, 43);
-    background: #B79D9B;
-}
+    #age {
+        width: 3.7em;
+    }
 
-@font-face {
-    font-family: 'Sacramento';
-    src: url('./font/Sacramento-Regular.ttf') format('truetype');
-}
+    #cancel {
+        width: 10.6em;
+    }
 
-#sitename {
-    font-size: 11.6em;
-    text-transform: lowercase;
-    line-height: 0.1px;
-    margin-bottom: 65px;
-}
+    #submit {
+        width: 10.5em;
+    }
 
-#slogan {
-    font-size: 3em;
-    text-transform: lowercase;
-    line-height: 0px;
-    margin-left: 0.2em;
-}
+    @font-face {
+        font-family: 'Sacramento';
+        src: url('./font/Sacramento-Regular.ttf') format('truetype');
+    }
 
-#brandname {
-    margin-top: 10em;
-    text-shadow: 2px 8px 8px rgb(43, 43, 43);
-}
+    #sitename {
+        font-size: 13em;
+        width: 800px;
+        text-transform: lowercase;
+        line-height: 0px;
+        font-weight: lighter;
+    }
+    #slogan {
+        font-size: 3em;
+        text-transform: lowercase;
+        line-height: 0px;
+        margin-top: -50px;
+        margin-left: 0.2em;
+        font-weight: lighter;
+    }
 
-.container {
-    display: flex;
-    width: 1;
-}
+    .brandname {
+        color: #FFD700;
+    }
 
-#inputalignment {
-    margin-left: 1.2em;
-}
+    .container {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+    }
 
-::placeholder {
-    color: wheat;
-}
+    #inputalignment {
+        padding-left: 1em;
+    }
 
-.inputs:hover::placeholder {
-    color: gray;
-}
+    ::placeholder {
+        color: rgb(255, 255, 255);
+    }
 
-#gender:hover {
-    color: gray;
-}
+    .inputs:hover {
+        cursor: pointer;
+    }
 
-#terms {
-    display: flex;
-    align-items: center;
-    margin-top: -13px;
-    font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 5em;
-}
+    .inputs:hover::placeholder {
+        color: rgb(94, 94, 94);
+    }
 
-#log {
-    font-size: 1em;
-    padding-right: 0.5em;
-    font-style: normal;
-}
+    #gender:hover {
+        color: rgb(94, 94, 94);
+    }
 
-#submit:hover {
-    color: gray;
-}
+    #terms {
+        display: flex;
+        align-items: center;
+        margin-top: -13px;
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 5em;
+    }
 
-#cancel:hover {
-    color: gray;
-}
+    #log {
+        font-size: 1em;
+        padding-right: 0.5em;
+        font-style: normal;
+    }
 
-#checkbox {
-    font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: normal;
-}
+    #submit:hover {
+        color: rgb(94, 94, 94);
+    }
 
-#tickbox {
-    margin-left: 1em;
+    #cancel:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #checkbox {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+
+    #tickbox {
+        margin-left: 1em;
+    }
 }

@@ -1,114 +1,447 @@
-body {
-    background-image: url("./assets/background.jpg");
-    background-repeat: repeat;
-    background-size: cover;
-    font-family: "Sacramento", "fallback";
-    font-style: italic;
+/*for phone screen*/
+@media screen and (max-width:766px) {
+
+    body {
+        font-family: 'Sacramento', fallback;
+        font-style: italic;
+        color: #ffffff;
+    }
+
+    #form {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-image {
+        /* The image used */
+        background-image: url("./assets/background.jpeg");
+
+        /* Add the blur effect */
+        filter: blur(30px);
+
+        /* Full height */
+        height: 110%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* Position the background image at the top of the page */
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        width: 110%;
+        z-index: -1;
+    }
+
+    #heading {
+        text-transform: capitalize;
+        font-size: 2.5em;
+        padding-left: 1.5em;
+        margin-bottom: 0.1em;
+        padding-top: 0.3em;
+        color: #ffd900
+    }
+
+    .inputs {
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 1em;
+        border-radius: 2em;
+        margin: 0.2em;
+        width: 20em;
+        border-width: 0px;
+        background-color: rgb(255, 255, 255);
+        background: #ffffff6b;
+    }
+
+    #forgetpassword {
+        text-decoration: none;
+        color: #ffd900
+    }
+
+    #forgetpassword:hover{
+        color: #ffffff6b;
+    }
+
+    #signup {
+        text-decoration: none;
+        color: #ffd900;
+    }
+
+    #signup:hover{
+        color:#ffffff6b ;
+    }
+
+    #submit {
+        margin-left: 6em;
+        width: 10.5em;
+    }
+
+    @font-face {
+        font-family: 'Sacramento';
+        src: url('./font/Sacramento-Regular.ttf') format('truetype');
+    }
+
+    #sitename {
+        font-size: 5em;
+        text-transform: lowercase;
+        line-height: 0px;
+        font-weight: lighter;
+    }
+
+    #slogan {
+        font-size: 2em;
+        text-transform: lowercase;
+        line-height: 4px;
+        margin-top: -20px;
+        margin-left: 0.2em;
+        font-weight: lighter;
+    }
+
+    .brandname {
+        color: #FFD700;
+    }
+
+    .container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+    }
+
+    ::placeholder {
+        color: rgb(255, 255, 255);
+    }
+
+    .inputs:hover {
+        cursor: pointer;
+    }
+
+    .inputs:hover::placeholder {
+        color: rgb(94, 94, 94);
+    }
+
+    .terms {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 23px;
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+
+    }
+
+    #submit:hover {
+        color: rgb(94, 94, 94);
+    }
 }
 
-#box {
-    width: 23em;
-    height: 18em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2em;
-    padding-right: 1em;
-    padding-left: 1.5em;
-    padding-top: 0.1em;
-    padding-bottom: 2em;
-    box-shadow: 18px 30px 50px rgb(43, 43, 43);
-    background: rgba(247, 248, 185, 0.342);
+/*for tab screen*/
+@media screen and (min-width:767px) {
+    body {
+        font-family: 'Sacramento', fallback;
+        font-style: italic;
+        color: #ffffff;
+    }
+
+    #form {
+        padding-left: 2em;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-image {
+        /* The image used */
+        background-image: url("./assets/background.jpeg");
+
+        /* Add the blur effect */
+        filter: blur(30px);
+
+        /* Full height */
+        height: 110%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        /* Position the background image at the top of the page */
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        width: 110%;
+        z-index: -1;
+    }
+
+    #heading {
+        text-transform: capitalize;
+        font-size: 2.5em;
+        padding-left: 1.5em;
+        margin-bottom: 0.1em;
+        padding-top: 0.3em;
+        color: #ffd900
+    }
+
+    .inputs {
+
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 1em;
+        border-radius: 2em;
+        margin: 0.2em;
+        width: 20em;
+        border-width: 0px;
+        background-color: rgb(255, 255, 255);
+        background: #ffffff6b;
+    }
+
+    #forgetpassword {
+        color: #ffd900;
+        text-decoration: none;
+    }
+
+    #forgetpassword:hover {
+        color: #ffffff6b;
+    }
+
+    #signup {
+        color: #ffd900;
+        text-decoration: none;
+    }
+
+    #signup:hover {
+        color: #ffffff6b;
+    }
+
+    #submit {
+        margin-left: 6em;
+        width: 10.5em;
+    }
+
+    @font-face {
+        font-family: 'Sacramento';
+        src: url('./font/Sacramento-Regular.ttf') format('truetype');
+    }
+
+    #sitename {
+        font-size: 10em;
+        text-transform: lowercase;
+        line-height: 0px;
+        font-weight: lighter;
+    }
+
+    #slogan {
+        font-size: 2em;
+        text-transform: lowercase;
+        line-height: 0px;
+        margin-top: -50px;
+        margin-left: 0.2em;
+        font-weight: lighter;
+    }
+
+    .brandname {
+        color: #FFD700;
+    }
+
+    .container {
+        flex-direction: row;
+        position: absolute;
+        top: 30%;
+    }
+
+    ::placeholder {
+        color: rgb(255, 255, 255);
+    }
+
+    .inputs:hover {
+        cursor: pointer;
+    }
+
+    .inputs:hover::placeholder {
+        color: rgb(94, 94, 94);
+    }
+
+    .terms {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 23px;
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+
+    #submit:hover {
+        color: rgb(94, 94, 94);
+    }
 }
 
-#form{
-    padding-top: 1em;
-    margin-top: 10em;
-    margin-left: 11.6em;
-}
+/*for desktop screen*/
+@media screen and (min-width:997px) {
+    body {
+        font-family: 'Sacramento', fallback;
+        font-style: italic;
+        color: #ffffff;
+    }
 
-.inputs {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1em;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    padding: 1em;
-    border-radius: 2em;
-    margin: 0.2em;
-    width: 20em;
-    border-width: 0em;
-    background-color: rgb(0, 0, 0);
-}
+    .bg-image {
+        /* The image used */
+        background-image: url("./assets/background.jpeg");
 
-#submit {
-    
-    margin-left: 6em;
-    width: 10em;
-    font-size: 1em;
+        /* Add the blur effect */
+        filter: blur(30px);
 
-}
-@font-face {
-    font-family: 'Sacramento';
-    src: url('./font/Sacramento-Regular.ttf') format('truetype');
-}
+        /* Full height */
+        height: 110%;
 
-#heading {
-    text-transform: capitalize;
-    font-size: 2.5em;
-    margin-left: 1.7em;
-    margin-bottom: 0.1em;
-    width: 10em;
-    top: 1em;
-    text-shadow: 2px 8px 8px rgb(43, 43, 43);
-}
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-.container {
-    display: flex;
-    width: 1;
-}
+        /* Position the background image at the top of the page */
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        width: 110%;
+        z-index: -1;
+    }
 
-#sitename{
-    font-size:11.6em;
-    text-transform: lowercase;
-    line-height: 0.1px;
-    margin-bottom: 65px;
-}
+    #heading {
+        text-transform: capitalize;
+        font-size: 2.5em;
+        padding-left: 1.5em;
+        margin-bottom: 0.1em;
+        padding-top: 0.3em;
+        color: #ffd900
+    }
 
-#slogan {
-    font-size: 3em;
-    text-transform: lowercase;
-    line-height: 0px;
-    margin-left: 0.2em;
-}
-#brandname{
-    margin-top: 10em;
-    text-shadow: 2px 8px 8px rgb(43, 43, 43);
-}
+    #form {
+        padding-left: 10em;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
 
-#terms{
-    display: flex;
-    align-items: center;
-    margin-top: -23px;
-    font-size: 1em;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 5em;
-}
-#slash{
-    font-size: 2em;
-    font-weight: bolder;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-}
-#log{
-    font-size: 1em;
-    font-style: normal;
-}
+    .inputs {
 
-::placeholder{
-    color: wheat;
-}
-#submit:hover{
-    color:gray;
-}
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 1em;
+        border-radius: 2em;
+        margin: 0.2em;
+        width: 20em;
+        border-width: 0px;
+        background-color: rgb(255, 255, 255);
+        background: #ffffff6b;
+    }
 
-.inputs:hover::placeholder{
-    color: gray;
+
+    #submit {
+        width: 10.5em;
+    }
+
+    @font-face {
+        font-family: 'Sacramento';
+        src: url('./font/Sacramento-Regular.ttf') format('truetype');
+    }
+
+    #sitename {
+        font-size: 13em;
+        width: 800px;
+        text-transform: lowercase;
+        line-height: 0px;
+        font-weight: lighter;
+    }
+
+    #slogan {
+        font-size: 3em;
+        text-transform: lowercase;
+        line-height: 0px;
+        margin-top: -50px;
+        margin-left: 0.2em;
+        font-weight: lighter;
+    }
+
+    .brandname {
+        justify-content: start;
+        color: #FFD700;
+    }
+
+    .container {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+    }
+
+    #inputalignment {
+        padding-left: 1em;
+    }
+
+    ::placeholder {
+        color: rgb(255, 255, 255);
+    }
+
+    .inputs:hover {
+        cursor: pointer;
+    }
+
+    .inputs:hover::placeholder {
+        color: rgb(94, 94, 94);
+    }
+
+    #gender:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #terms {
+        display: flex;
+        align-items: center;
+        margin-top: -13px;
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 5em;
+    }
+
+    #log {
+        font-size: 1em;
+        padding-right: 0.5em;
+        font-style: normal;
+    }
+
+    #submit:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #cancel:hover {
+        color: rgb(94, 94, 94);
+    }
+
+    #checkbox {
+        font-size: 1em;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: normal;
+    }
+
+    #tickbox {
+        margin-left: 1em;
+    }
 }

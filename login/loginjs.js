@@ -18,7 +18,6 @@ function passwordValidation() {
 
     //get password and confrim password for html.
     let password = document.querySelector("#password").value;
-    let ConfrimPassword = document.querySelector("#Cpassword").value;
 
     //set Regular expression for password. 
     let lowercaseRegex = /[a-z]/;
@@ -30,17 +29,12 @@ function passwordValidation() {
     if (!password.match(lowercaseRegex) || !password.match(uppercaseRegex) || !password.match(numaricalRegex) || !password.match(specialCharRegex) || password.length < 8) {
         console.log("invalid password");
     }
-
-    //checking the password match confrimPassword.
-    if (password !== (ConfrimPassword)) {
-        console.log("password mismatch");
-    }
 }
 
 //function contains all the validating function.
 //it call all the function when user click on the submit butten in html.
 function inputvalidation() {
-   
+    
     //calling all validating function.
     emailValidation();
     passwordValidation();

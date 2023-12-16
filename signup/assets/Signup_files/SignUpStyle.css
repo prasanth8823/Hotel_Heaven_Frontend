@@ -1,0 +1,176 @@
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Sacramento', fallback;
+    font-style: italic;
+    color: #ffffff;
+
+
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("./assets/background.jpeg");
+
+    /* Add the blur effect */
+    filter: blur(30px);
+
+    /* Full height */
+    height: 110%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Position the background image at the top of the page */
+    position: fixed;
+    top: -50px;
+    left: -50px;
+    width:110%;
+    z-index: -1;
+}
+
+#heading {
+    text-transform: capitalize;
+    font-size: 2.5em;
+    padding-left: 1.5em;
+    margin-bottom: 0.1em;
+    
+    padding-top: 0.3em;
+    color: #ffd900
+}
+
+#form {
+    padding-left: 20em;
+}
+
+.inputs {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 1em;
+    border-radius: 2em;
+    margin: 0.2em;
+    width: 20em;
+    border-width: 0px;
+    background-color: rgb(255, 255, 255);
+    background: #ffffff6b;
+}
+
+#gender {
+    width: 10.6em;
+}
+
+#dob {
+    width: 8.6em;
+}
+
+#age {
+    width: 3.7em;
+}
+
+#cancel {
+    width: 10.6em;
+}
+
+#submit {
+    width: 10.5em;
+}
+
+#box {
+    width: 25em;
+    height: 38em;
+    border-radius: 2em;
+    box-shadow: 18px 30px 50px rgb(0, 0, 0);
+    background: #5e5e5e;
+    opacity: 45%;
+    margin-top: -640px;
+}
+
+@font-face {
+    font-family: 'Sacramento';
+    src: url('./font/Sacramento-Regular.ttf') format('truetype');
+}
+
+#sitename{
+    font-size: 10em;
+    text-transform: lowercase;
+    line-height: 0px;
+    font-weight: lighter;
+}
+
+#slogan {
+    font-size: 2em;
+    text-transform: lowercase;
+    line-height: 0px;
+    margin-top: -50px;
+    margin-left: 0.2em;
+    font-weight: lighter;
+}
+
+.brandname {
+    padding-top: 20%;
+    color: #FFD700;
+}
+
+.container {
+    display: flex;
+    width: 1;
+}
+
+#inputalignment {
+    padding-left: 1em;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.inputs:hover {
+    cursor: pointer;
+}
+
+.inputs:hover::placeholder {
+    color: rgb(94, 94, 94);
+}
+
+#gender:hover {
+    color: rgb(94, 94, 94);
+}
+
+#terms {
+    display: flex;
+    align-items: center;
+    margin-top: -13px;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5em;
+}
+
+#log {
+    font-size: 1em;
+    padding-right: 0.5em;
+    font-style: normal;
+}
+
+#submit:hover {
+    color: rgb(94, 94, 94);
+}
+
+#cancel:hover {
+    color: rgb(94, 94, 94);
+}
+
+#checkbox {
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+#tickbox {
+    margin-left: 1em;
+}
