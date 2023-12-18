@@ -8,12 +8,26 @@ function emailValidation() {
     let emailRegex = /^[a-zA-Z0-9.]+@gmail\.com$/;
 
     //validating the email id.
+    if (email == "") {
+        alert("pleace enter email id");
+        return false;
+    }
     if (emailRegex.test(email) == false) {
-        console.log("invalid email");
+        alert("invalid email id");
+        return false;
+    }
+    else {
+        return true;
     }
 }
 
 function inputvalidation() {
     //calling all validating function.
-    emailValidation();
+    let result1 = emailValidation();
+    if(result1 == true){
+        return true;
+    }
+    else{
+        false
+    }
 }

@@ -16,20 +16,24 @@
             <h1 id="sitename">HOTEL HEAVEN</h1>
             <h2 id="slogan">Taste a Slice of Paradise.</h2>
         </div>
-        <form action="" id="form">
-            <div id="inputalignment">
-                <h1 id="heading">Login Account</h1>
-                <input type="email" name="emailId" id="emailId" class="inputs" placeholder="Email Id" required
-                    max="100"><br>
-                <input type="password" name="password" id="password" class="inputs" placeholder="Password" required><br>
-                <button id="submit" class="inputs" onclick="inputvalidation()">Login</button>
-                <div class="terms">
-                    <a href="http://127.0.0.1:5500/forgetpassword/forgetpasswordindex.html" id="forgetpassword">Forget
-                        Password</a><br>
-                    <a href="http://127.0.0.1:5500/signup/signupindex.html" id="signup">Signup</a>
+        <div id="formalignment">
+            <form onsubmit="inputvalidation()" action="" id="form">
+                <div id="inputalignment">
+                    <h1 id="heading">Login Account</h1>
+                    <input type="email" name="emailId" id="emailId" class="inputs" placeholder="Email Id" required
+                        max="100"><br>
+                    <input type="password" name="password" id="password" class="inputs" placeholder="Password"
+                        required><br>
+                    <button id="submit" class="inputs">Login</button>
+                    <div class="terms">
+                        <a href="http://127.0.0.1:5500/forgetpassword/forgetpasswordindex.html"
+                            id="forgetpassword">Forget
+                            Password</a><br>
+                        <a href="http://127.0.0.1:5500/signup/signupindex.html" id="signup">Signup</a>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </body>
 

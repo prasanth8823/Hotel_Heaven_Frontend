@@ -61,12 +61,13 @@
         background: #ffffff6b;
     }
 
+
     #forgetpassword {
         text-decoration: none;
         color: #ffd900
     }
 
-    #forgetpassword:hover{
+    #forgetpassword:hover {
         color: #ffffff6b;
     }
 
@@ -75,8 +76,8 @@
         color: #ffd900;
     }
 
-    #signup:hover{
-        color:#ffffff6b ;
+    #signup:hover {
+        color: #ffffff6b;
     }
 
     #submit {
@@ -114,8 +115,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        top: 30%;
     }
 
     ::placeholder {
@@ -259,8 +258,6 @@
 
     .container {
         flex-direction: row;
-        position: absolute;
-        top: 30%;
     }
 
     ::placeholder {
@@ -331,10 +328,11 @@
     }
 
     #form {
-        padding-left: 10em;
+        /* padding-left: 10em; */
         flex-direction: column;
         display: flex;
         align-items: center;
+
     }
 
     .inputs {
@@ -364,10 +362,10 @@
 
     #sitename {
         font-size: 13em;
-        width: 800px;
         text-transform: lowercase;
-        line-height: 0px;
+        line-height: 0em;
         font-weight: lighter;
+        flex-grow: 1;
     }
 
     #slogan {
@@ -380,16 +378,21 @@
     }
 
     .brandname {
-        justify-content: start;
+        flex: 1;
         color: #FFD700;
+
     }
 
     .container {
-        flex-direction: row;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         position: absolute;
-        top: 30%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     #inputalignment {
@@ -431,17 +434,4 @@
         color: rgb(94, 94, 94);
     }
 
-    #cancel:hover {
-        color: rgb(94, 94, 94);
-    }
-
-    #checkbox {
-        font-size: 1em;
-        font-family: 'Times New Roman', Times, serif;
-        font-style: normal;
-    }
-
-    #tickbox {
-        margin-left: 1em;
-    }
 }
